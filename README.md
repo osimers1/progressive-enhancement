@@ -19,5 +19,4 @@ Ceci est un sprint html et css. dans ce parcour des excercises sont present tous
 * 4.Outils utiles 
 * 5.Excercises de fin
 
-/home/adrien/Desktop/becode
 ![logobecode](becode.png)
