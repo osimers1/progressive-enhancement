@@ -22,6 +22,7 @@ Ceci est un sprint html et css. dans ce parcour des excercises sont present tous
 ## 1)Sémentique
 La sémentique en code html c'est utiliser les bonnes balise pour chaque bouts texte.
 Exemple se demander qu'est ce que ce bout de texte ?
+Les balises HTML <div> et <span> n'approte pas de sémentique.
 
 ## 1.1)SEO qu'est ce que c'est ?
 **SEO (Search Engine Optimization)** signifie en français : **« Optimisation pour les moteurs de recherche »**.
@@ -29,11 +30,12 @@ Exemple se demander qu'est ce que ce bout de texte ?
 Ce terme défini l’ensemble des **techniques** mises en œuvre pour **améliorer** la **position d’un site web** sur les pages de **résultats des moteurs** de recherche.
 C'est a dire que le moteur de recherche trouve les page web grace a leur balisage etc.
 
-## 1.3)Accesibilité
+## 1.2)Accesibilité
 faire attention a l'accesibilité (aveugles et mal voyants).
 -Si la sémentique est respecter alors un screen readers (lecture pour les aveugles) pourra lire a haute voix le site et ce serra compréhensible.
 
-## Retranscription d'un texte en HTML (exercises)
+## 1.3)Retranscription d'un texte en HTML (exercises)
+voir cour et fichier retranscription.html
 
 
 
