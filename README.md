@@ -20,4 +20,4 @@ Ceci est un sprint html et css. dans ce parcour des excercises sont present tous
 * 5.Excercises de fin
 
 /home/adrien/Desktop/becode
-![logobecode](markdown/images/becode.png)
+![logobecode](becode.png)
