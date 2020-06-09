@@ -19,4 +19,15 @@ Ceci est un sprint html et css. dans ce parcour des excercises sont present tous
 * 4.Outils utiles 
 * 5.Excercises de fin
 
+## Sémentique
+La sémentique en code html c'est utiliser les bonnes balise pour chaque bouts texte.
+Exemple se demander qu'est ce que ce bout de texte ?
+
+## SEO qu'est ce que c'est ?
+SEO (Search Engine Optimization) signifie en français : **« Optimisation pour les moteurs de recherche »**.
+
+Ce terme défini l’ensemble des techniques mises en œuvre pour améliorer la position d’un site web sur les pages de résultats des moteurs de recherche
+C'est a dire que le chaque moteur de recherche trouve les page web grace a leur balisage etc.
+
+
 ![logobecode](becode.png)
