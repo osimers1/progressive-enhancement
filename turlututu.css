@@ -1,0 +1,66 @@
+/*@font-face{
+    font-family: "metal";
+    src: url('MetalMania-regular.ttf');
+}*/
+body{
+
+
+}
+header{
+    background-color: #463F3E ;
+    color: white;
+    padding-top: 15px;
+    padding-left: 10%;
+    margin: -20px;
+
+}
+li{
+    display: inline-block;
+    padding-right: 26px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+ul > li:nth-child(8){
+    padding-left: 480px;    
+}
+.plug-and-play{
+    color: white;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    
+}
+
+.start{
+    display: inline-block;
+    border: 3px solid white;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.fond{
+    background: -webkit-linear-gradient(90deg, rgb(22, 135, 237), rgb(16, 112, 208));
+    background: linear-gradient(90deg, rgb(22, 135, 237), rgb(16, 112, 208));
+    margin-top: 20px;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.perso{
+    position: absolute;
+    left: 60px; top: 100px;
+
+
+}

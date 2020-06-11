@@ -1,0 +1,69 @@
+body{
+    max-width: 90%;
+    max-height: 90%;
+    margin: 5% auto ;
+    background: -webkit-linear-gradient(90deg, rgb(22, 135, 237), rgb(173, 34, 187));
+    background: linear-gradient(90deg, rgb(22, 135, 237), rgb(173, 34, 187));
+    background-image: url(/home/adrien/Desktop/becode/learning-html-css/progressive-enhancement/bienoumal.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: right ;
+    background-position-y: bottom ;
+    background-size: cover;
+
+}
+
+header{
+    margin: 0px auto;
+    width: 50%;
+}
+
+q{  
+    font-style: italic;
+    margin: 0px auto;
+    width: 30%;
+    display: flex;
+    font-size: 160%;
+    background-color: grey;
+    padding-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+/*q strong {
+    padding-left: 1px   ;
+}*/
+.villageois {
+    border-left: 3px solid #B22222;
+}
+
+.fermier{
+    border-left: 3px solid #FFFF00;
+}
+h1 > span{
+    background-color: yellow;
+}
+
+.mal{
+    color: red;
+}
+
+.bien{
+    color: green;
+}
+table{
+    margin: 0px auto;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+ul > li:nth-child(1){
+    background-repeat: no-repeat;
+    background-image: url(/home/adrien/Desktop/becode/learning-html-css/progressive-enhancement/bien.png);
+}
+
+img{
+    float: right;
+    margin-top: 15px;
+    margin-left: 15px;
+}
