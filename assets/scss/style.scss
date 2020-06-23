@@ -8,19 +8,17 @@
 header{
     background-color: #2F2D2D ;
     color: white;
-    
-    padding: {
-        top: 1px;
-        left: 1px;
-    }
-
+    padding-top: 1px;
+    padding-left: 1px;
 }
+
 footer{
     background-color: #2F2D2D;
     color: white;
     padding-top: 10px;
     font-family: sans-serif;
 }
+
 // li.menu-en-tete{
 //     display: inline-block;
 //     padding-right: 26px;
@@ -33,22 +31,30 @@ footer{
 // }
 // ul.menu-en-tete > li:nth-child(1){
 //     padding-left: 120px;    
-// }
+// } transformation du code css en .scss pour se faciliter la vie (transformation en dessous)
 
 .menuEnTete{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-decoration: none;
     li{ 
-        display: inline-block;
+        // display: inline-block;
+        display: flex;
         padding-right: 26px;
         margin-bottom: 20px;
         font-family: sans-serif;
-    }
-
-    &:nth-child(9){
-        padding-left: 480px;  
-    }
-
-    &:nth-child(1){
-        padding-left: 120px; 
+        &:nth-child(9){
+            padding-left: 480px;  
+            height: 20px;
+            width: 25px;
+        }
+    
+        &:nth-child(1){
+            padding-left: 120px; 
+        }
     }
 }
 
@@ -65,7 +71,6 @@ footer{
 // }
 
 .listBoutton{
-        display: flex;
         padding-left: 500px;
         padding-bottom: 100px;
         padding-top: 50px;
@@ -112,13 +117,15 @@ footer{
     border-radius: 10px;
     font-family: sans-serif;
     margin-top: 10px;
-    padding{
-        top: 20px;
-        bottom: 20px;
-        left: 15px;
+
+    padding: {
         right: 15px;
+        left: 15px;
+        bottom: 20px;
+        top: 20px;
     }
 }
+
 
 .fond-bleu{
     background: -webkit-linear-gradient(90deg, rgb(22, 135, 237), rgb(16, 112, 208));
@@ -127,16 +134,30 @@ footer{
     padding-bottom: 20px;
     text-align: center;
     margin-top: -17px;
+    display: flex;
+    flex-direction: row;
+    
+    .fondBleuMenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .perso{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20%;
+        padding-right: 10%;
+        padding-top: 5%;
+    }
 }
+
+
+
 .fond-gris{
     background-color: #F1F1F1;
     padding-top: 40px;
     padding-bottom: 60px;
 }
-.perso{
-    position: absolute;
-    left: 140px; top: 130px;
-}
+
 .entre{
     text-align: center;
     font-size: 30px;
@@ -151,7 +172,6 @@ footer{
 
 }
 .text{
-    display: inline-block;
     color: white;
     font-family: sans-serif;
 }
@@ -191,6 +211,7 @@ footer{
 .fwd{
     padding-left: 50px;
 }
+
 .product{
     display: block;
     margin-left: auto;
@@ -199,7 +220,8 @@ footer{
     
 }
 .message1{
-    position: relative;
+    display: flex;
+    flex-direction: row;
     left: 1400px; top: 260px;
 }
 .message2{
@@ -209,4 +231,16 @@ footer{
 .copyright{
     padding-left: 1300px;
     margin-top: -20px;
+}
+
+@media screen and (max-width: 700px){
+    .perso{
+        width: 10%;
+        height: auto;
+    }
+    .fondBleuMenu{
+        width: 10%;
+        height: auto;
+    }
+
 }
