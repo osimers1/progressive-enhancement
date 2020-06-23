@@ -2,11 +2,38 @@
     font-family: "metal";
     src: url('MetalMania-regular.ttf');
 }*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background-color: #2F2D2D;
   color: white;
   padding-top: 1px;
   padding-left: 1px;
+}
+header .menuEnTete {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+header .menuEnTete li {
+  display: flex;
+  padding-right: 26px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+header .menuEnTete li:nth-child(9) {
+  padding-left: 480px;
+  height: 20px;
+  width: 25px;
+}
+header .menuEnTete li:nth-child(1) {
+  padding-left: 120px;
 }
 
 footer {
@@ -14,34 +41,23 @@ footer {
   color: white;
   padding-top: 10px;
   font-family: sans-serif;
-}
-
-.menuEnTete {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-decoration: none;
 }
-.menuEnTete li {
+footer .copyright {
   display: flex;
-  padding-right: 26px;
-  margin-bottom: 20px;
-  font-family: sans-serif;
+  padding-left: 50%;
 }
-.menuEnTete li:nth-child(9) {
-  padding-left: 480px;
-  height: 20px;
-  width: 25px;
-}
-.menuEnTete li:nth-child(1) {
-  padding-left: 120px;
+footer .message2 {
+  display: flex;
+  margin-left: 5%;
 }
 
 .listBoutton {
-  padding-left: 500px;
-  padding-bottom: 100px;
-  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .listBoutton .boutton {
   display: inline-block;
@@ -50,9 +66,11 @@ footer {
   color: white;
   font-size: 27px;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
   padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 20px;
+  margin-right: 2%;
+  margin-left: 2%;
   font-family: sans-serif;
   border-radius: 10px;
 }
@@ -100,11 +118,12 @@ footer {
 .fond-bleu .fondBleuMenu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .fond-bleu .perso {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20%;
+  padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
 }
@@ -124,37 +143,29 @@ footer {
 .fond-bleu2 {
   background: -webkit-linear-gradient(90deg, #1687ed, #1070d0);
   background: linear-gradient(90deg, #1687ed, #1070d0);
-  padding-top: 0px;
   padding-bottom: 50px;
-  margin-top: 20px;
 }
-
-.text {
+.fond-bleu2 .text {
   color: white;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
-.titre1 {
-  font-size: 27px;
-  margin-bottom: -5px;
+.fond-bleu2 .text div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
-.text1 {
-  padding-left: 170px;
-  padding-right: 20px;
+.fond-bleu2 .text div p {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-
-.text2 {
-  padding-right: 170px;
-}
-
-.text3 {
-  padding-left: 170px;
-  padding-right: 20px;
-}
-
-.text4 {
-  padding-right: 170px;
+.fond-bleu2 .text h2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
 }
 
 .miles {
@@ -193,17 +204,6 @@ footer {
   flex-direction: row;
   left: 1400px;
   top: 260px;
-}
-
-.message2 {
-  display: flex;
-  top: -50px;
-  left: 1400px;
-}
-
-.copyright {
-  padding-left: 1300px;
-  margin-top: -20px;
 }
 
 @media screen and (max-width: 700px) {

@@ -5,11 +5,43 @@
 
 // %btn => creer un faux selecteur cad n'apparatrai pas dans le .css mais on peut l'uitiliser dans le code en faisant @extend %btn;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     background-color: #2F2D2D ;
     color: white;
     padding-top: 1px;
     padding-left: 1px;
+
+    .menuEnTete{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-decoration: none;
+
+        li{ 
+        // display: inline-block;
+            display: flex;
+            padding-right: 26px;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            
+            &:nth-child(9){
+                padding-left: 480px;  
+                height: 20px;
+                width: 25px;
+            }
+        
+            &:nth-child(1){
+                padding-left: 120px; 
+            }
+        }
+    }
 }
 
 footer{
@@ -17,6 +49,18 @@ footer{
     color: white;
     padding-top: 10px;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+
+    .copyright{
+        display: flex;
+        padding-left: 50%;
+        
+    }
+    .message2{
+        display: flex;
+        margin-left: 5%;
+    }
 }
 
 // li.menu-en-tete{
@@ -33,30 +77,7 @@ footer{
 //     padding-left: 120px;    
 // } transformation du code css en .scss pour se faciliter la vie (transformation en dessous)
 
-.menuEnTete{
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        text-decoration: none;
-    li{ 
-        // display: inline-block;
-        display: flex;
-        padding-right: 26px;
-        margin-bottom: 20px;
-        font-family: sans-serif;
-        &:nth-child(9){
-            padding-left: 480px;  
-            height: 20px;
-            width: 25px;
-        }
-    
-        &:nth-child(1){
-            padding-left: 120px; 
-        }
-    }
-}
 
 // ul {
 //     li { faire attetion au classe erreur commise le 22/06/2020 => .boutton { ul {} li{}} ne vas pas car boutton et ul etait les memes
@@ -71,9 +92,10 @@ footer{
 // }
 
 .listBoutton{
-        padding-left: 500px;
-        padding-bottom: 100px;
-        padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
 
         .boutton {
             display:inline-block;
@@ -81,10 +103,16 @@ footer{
             background-color: rgb(10, 119, 158);
             color: white;
             font-size: 27px;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding: {
+                left: 20px;
+                bottom: 15px;
+                top: 15px;
+                right: 20px;
+            }
+            margin: {
+                right: 2%;
+                left: 2%;
+            }
             font-family: sans-serif;
             border-radius: 10px;
 
@@ -140,11 +168,12 @@ footer{
     .fondBleuMenu{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .perso{
         display: flex;
         flex-wrap: wrap;
-        padding-left: 20%;
+        padding-left: 10%;
         padding-right: 10%;
         padding-top: 5%;
     }
@@ -163,36 +192,43 @@ footer{
     font-size: 30px;
     font-family: sans-serif;
 }
+
 .fond-bleu2{
     background: -webkit-linear-gradient(90deg, rgb(22, 135, 237), rgb(16, 112, 208));
     background: linear-gradient(90deg, rgb(22, 135, 237), rgb(16, 112, 208));
-    padding-top: 0px;
-    padding-bottom: 50px;
-    margin-top: 20px;
+    padding: {
+        
+        bottom: 50px;
+    }
+    
+    .text{
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            p{
+                padding: {
+                    top: 5%;
+                    left: 10%;
+                    right: 10%;
+                }
+            }
+        }
+        
+        h2{
+            display: flex;
+            justify-content: space-evenly;
+             padding-top: 5%;
+        }
+    }
+}
 
-}
-.text{
-    color: white;
-    font-family: sans-serif;
-}
-.titre1{
-    font-size: 27px;
-    margin-bottom: -5px;
-}
-.text1{
-    padding-left: 170px;
-    padding-right: 20px;
-}
-.text2{
-    padding-right: 170px;
-}
-.text3{
-    padding-left: 170px;
-    padding-right: 20px;
-}
-.text4{
-    padding-right: 170px;
-}
 .miles{
     padding-left: 230px;
 }
@@ -224,14 +260,8 @@ footer{
     flex-direction: row;
     left: 1400px; top: 260px;
 }
-.message2{
-    display: flex;
-    top: -50px; left: 1400px;
-}
-.copyright{
-    padding-left: 1300px;
-    margin-top: -20px;
-}
+
+
 
 @media screen and (max-width: 700px){
     .perso{
@@ -243,4 +273,5 @@ footer{
         height: auto;
     }
 
-}
+
+}   
