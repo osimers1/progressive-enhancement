@@ -196,7 +196,7 @@ footer {
 }
 
 .message2 {
-  position: relative;
+  display: flex;
   top: -50px;
   left: 1400px;
 }
