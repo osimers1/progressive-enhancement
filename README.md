@@ -38,5 +38,4 @@ faire attention a l'accesibilité (aveugles et mal voyants).
 voir cour et fichier retranscription.html
 
 
-
-![logobecode](becode.png)
+## Résultat [ici](https://osimers1.github.io/progressive-enhancement/)
